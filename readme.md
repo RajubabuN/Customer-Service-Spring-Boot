@@ -14,6 +14,7 @@ Rajubabu N | Developer | 15-01-2014
 * [Database](#database)
 * [Generate Token](#token)
 * [EndPoints](#endpoints)
+* [Postman Collection](#collection)
 
 
 ### <a name="overview"></a> _**Overview**_
@@ -71,6 +72,14 @@ Get Customer By ID|http://ec2-13-239-26-205.ap-southeast-2.compute.amazonaws.com
 Update Customer|http://ec2-13-239-26-205.ap-southeast-2.compute.amazonaws.com:8080/v1/api/customers/ | PUT | {"Id": 100,"Name": "Sam","Email": "abc@gmail.com","Contact No": "1234567890"} | Provide valid ID
 Delete Customer|http://ec2-13-239-26-205.ap-southeast-2.compute.amazonaws.com:8080/v1/api/customers/{id} | DELETE | | Provide valid ID
 
+
+### <a name="collection"></a> _**Postman collection**_
+
+Service Endpoints can be accessed using below Postman collections.
+
+https://www.postman.com/nrajubabu/workspace/springcustomerworkspace/collection/32295548-a70ab896-a37a-4290-bd6f-f2c5794906aa?action=share&creator=32295548
+
+Note: Token should be generated and pass to all endpoints.
 
 Snapshots:
 Passing token in Swagger: 
