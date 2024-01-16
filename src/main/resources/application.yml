@@ -1,0 +1,33 @@
+spring:
+  #h2:
+    #console:
+      #enabled: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: admin@123
+    #url: jdbc:h2:mem:customer
+    #username: sa
+    #password: password
+  jpa:
+    #database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        #ddl-auto: true
+    #show-sql: true
+liquibase:
+  change-log: db/changelog/db.changelog-master.yaml
+springdoc.swagger-ui.path: /swagger-ui.html
+url:
+  swagger:
+    permitall: /v3/api-docs/**, /swagger-ui/**, /auth/**, /admin/create/user,/console/**,/h2-console/**,/actuator/**
+  external:
+    api: https://host:port/getData
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#logging.level.root: DEBUG
